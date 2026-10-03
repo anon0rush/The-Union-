@@ -1,0 +1,17 @@
+{
+  "name": "the-union",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Real-time collaborative document editor with live cursors, version history and secure sharing.",
+  "workspaces": ["server", "client"],
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,magenta \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "test": "npm test -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
