@@ -1,6 +1,6 @@
 # The Union
 
-Intern ID : CITS8559
+
 A full-stack **real-time collaborative document editor**. Multiple people edit the same document at the same time and see each other's **live cursors**. Edits merge without conflicts (CRDT), keep working **offline**, and every document has a **version history** with one-click restore. Documents are shared securely with **roles, expiring links and revocation**.
 
 | | |
