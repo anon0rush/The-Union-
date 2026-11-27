@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install dependencies",
+      "type": "shell",
+      "command": "npm install",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run app",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": {
+        "owner": "app",
+        "pattern": { "regexp": "^__never_matches__$" },
+        "background": { "beginsPattern": "concurrently", "endsPattern": "ready in" }
+      }
+    },
+    {
+      "label": "Run app without opening a browser",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": { "env": { "NO_OPEN": "1" } },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "app",
+        "pattern": { "regexp": "^__never_matches__$" },
+        "background": { "beginsPattern": "concurrently", "endsPattern": "ready in" }
+      }
+    },
+    {
+      "label": "Run tests",
+      "type": "shell",
+      "command": "npm test",
+      "problemMatcher": [],
+      "group": { "kind": "test", "isDefault": true }
+    }
+  ]
+}

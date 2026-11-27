@@ -1,0 +1,19 @@
+{
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/*.db-wal": true,
+    "**/*.db-shm": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/package-lock.json": true
+  },
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.view"
+  },
+  "[javascript][javascriptreact][json][css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
