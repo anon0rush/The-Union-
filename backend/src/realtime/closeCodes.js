@@ -1,0 +1,6 @@
+export const CloseCode = {
+  UNAUTHORIZED: 4401,
+  FORBIDDEN: 4403,
+  NOT_FOUND: 4404,
+  ROLE_CHANGED: 4409,
+};

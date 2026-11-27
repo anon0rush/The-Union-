@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Full stack: run app and open in Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/frontend",
+      "preLaunchTask": "Run app without opening a browser"
+    },
+    {
+      "name": "Debug backend",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/backend",
+      "program": "${workspaceFolder}/backend/src/server.js",
+      "runtimeArgs": ["--disable-warning=ExperimentalWarning"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Debug backend tests",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/backend",
+      "runtimeArgs": ["--disable-warning=ExperimentalWarning", "--test", "tests/"],
+      "console": "integratedTerminal"
+    }
+  ]
+}
